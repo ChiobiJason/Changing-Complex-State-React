@@ -16,8 +16,8 @@ function App() {
     <div className="container">
       <h1>Hello {initialFirstName} {initialLastName}</h1>
       <form>
-        <input onChange={handleFirstNameChange} name="fName" placeholder="First Name" />
-        <input onChange={handleLastNameChange} name="lName" placeholder="Last Name" />
+        <input onChange={handleFirstNameChange} name="fName" placeholder="First Name" value={initialFirstName} />
+        <input onChange={handleLastNameChange} name="lName" placeholder="Last Name" value={initialFirstName} />
         <button>Submit</button>
       </form>
     </div>
